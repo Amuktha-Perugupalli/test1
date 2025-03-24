@@ -1,0 +1,257 @@
+/* General Styles */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Background Image for Home Page */
+body.home {
+  background-image: url('static/images/background-home1.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Image for Pet Page */
+body.pet-page {
+  background-image: url('static/7.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Background Image for To-Do List Page */
+body.todo {
+  background-image: url('static/7.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Image for Pomodoro Timer Page */
+body.pomodoro {
+  background-image: url('static/images/7.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Image for Store Page */
+body.store {
+  background-image: url('static/images/background-store.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home Screen */
+#home-screen {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px;
+}
+
+#home-screen h1 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+#home-screen p {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+/* Pet Options */
+.pet-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pet-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.pet-btn:hover {
+  transform: scale(1.05);
+}
+
+.pet-btn span {
+  font-size: 24px; /* Larger emoji size */
+}
+
+/* Pet Page */
+#sidebar {
+  width: 200px;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  padding: 20px;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.2s ease;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background-color: rgba(68, 68, 68, 0.8);
+}
+
+.menu-btn span {
+  font-size: 24px; /* Larger emoji size */
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+}
+
+#pet-image span {
+  font-size: 100px; /* Large emoji for pet */
+}
+
+/* To-Do List Page */
+#todo-screen {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+#task-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#add-task-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#tasks {
+  list-style-type: none;
+  padding: 0;
+}
+
+#tasks li {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#back-to-pet-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(76, 175, 80, 0.8);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+#back-to-pet-btn:hover {
+  background-color: rgba(69, 160, 73, 0.8);
+}
+
+/* Pomodoro Timer Page */
+#pomodoro-screen {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+#timer {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+#start-pomodoro, #reset-pomodoro {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Store Page */
+#store-screen {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+#store-items .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#store-items .item:hover {
+  transform: scale(1.05);
+}
+
+#store-items .item span {
+  font-size: 24px; /* Larger emoji size */
+}
